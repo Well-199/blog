@@ -1,5 +1,7 @@
 .dropdown{
     width: 280px;
+    max-width: 280px;
+    min-width: 280px;
     height: auto;
 }
 
