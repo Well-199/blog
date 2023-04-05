@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3232371067630683"
+     crossorigin="anonymous"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E86H5GR1PY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E86H5GR1PY');
+    </script>
+
+    <!---- Tags Meta ---------->
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="www.wellsistemasweb.com.br/">
+                <meta name="description" content="WellSitemasWeb, Javascript, Python, PHP, Java, Programação, Desenvolvimento, Software">
+                    <meta name="keywords" content="WellSitemasWeb, Javascript, Python, PHP, Java, Programação, Desenvolvimento, Software">
+
+    <link rel="shortcut icon" href="../../../assets/images/lasca.png" />
+    <link rel="stylesheet" type="text/css" href="../../../css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/tutorial.css" />
+	<title>SQL: Linguagem de Consulta Estruturada</title>
+</head>
+<body>
+	<header>
+		<h1>WellSistemasWeb</h1>
+		<nav role="navigation" class="primary-navigation">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="../javascript">JavaScript</a></li>
+                <li><a href="../python">Python</a></li>
+                <li><a>Mais &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a href="../php">O que é o PHP ?</a></li>
+                        <li><a href="../java">O que é o Java ?</a></li>
+                        <li><a href="../sql">O que é SQL ?</a></li>
+                    </ul>
+                </li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<h2>Introdução ao SQL: O que é e como funciona</h2>
+			<p>
+                SQL é uma linguagem de programação usada para gerenciar dados em bancos de dados relacionais. 
+                Ele permite que você crie, manipule e consulte informações armazenadas em um banco de dados. 
+                É uma das linguagens mais utilizadas no mundo do desenvolvimento de software e é uma habilidade 
+                essencial para qualquer pessoa que trabalhe com dados.
+            </p>
+		</article>
+
+        <article>
+            <p>
+                <strong>O que é um banco de dados relacional ?</strong>
+            </p>
+            <p>
+                Um banco de dados relacional é uma coleção de tabelas que contêm informações organizadas em linhas e colunas. 
+                Cada tabela representa um conjunto de informações relacionadas. Por exemplo, você pode ter uma tabela de clientes que 
+                contém informações sobre cada cliente, como nome, endereço e número de telefone.
+            </p>
+            <p>
+                Cada linha em uma tabela é chamada de registro e cada coluna é chamada de campo. 
+                Um campo representa um tipo de informação, como um número de telefone ou um endereço de e-mail.
+            </p>
+        </article>
+
+        <article>
+            <div class="banner" style="margin-bottom: 20px;">
+                <img src="../../../assets/banners/banner-sql.png" alt="Banner escrito SQL" />
+            </div>
+        </article>
+
+		<article>
+            <p>
+                <strong>Como o SQL funciona?</strong>
+            </p>
+            <p>
+                O SQL é usado para criar, alterar e consultar bancos de dados. Você pode usar o SQL para criar tabelas, 
+                adicionar registros a uma tabela, atualizar registros existentes e excluir registros. Você também pode usar o 
+                SQL para fazer consultas em um banco de dados para obter informações específicas.
+            </p>
+
+            <p>
+                As consultas SQL são escritas em uma linguagem que é fácil de entender e seguir. Por exemplo, 
+                a consulta SQL a seguir selecionaria todas as informações da tabela de clientes:
+            </p>
+
+            <pre>
+                <div class="bg-black">
+                    <div class="flex">
+                        <span>SQL</span>  
+                    </div>
+                    <div class="codigo">
+                        <code>
+                            <span class="sql">SELECT</span>
+                            <span class="operador">*</span>
+                            <span class="sql">FROM</span>
+                            <span class="tabela">clientes;</span>
+                        </code>
+                    </div>
+                </div>
+            </pre>
+
+            <p>
+                Esta consulta retorna todos os registros da tabela de clientes. O asterisco (*) 
+                é um caractere curinga que representa todas as colunas em uma tabela.
+            </p>
+		</article>
+
+        <article>
+            <p>
+                <strong>Aqui estão alguns outros exemplos de consultas SQL:</strong>
+            </p>
+            <p>
+                <ul>
+                    <li>Selecionando informações específicas da tabela de clientes:</li>
+                </ul>
+            </p>
+
+            <pre>
+                <div class="bg-black">
+                    <div class="flex">
+                        <span>SQL</span>  
+                    </div>
+                    <div class="codigo">
+                        <code>
+                            <span class="sql">SELECT</span>
+                            <span class="operador">nome,</span>
+                            <span class="operador">telefone</span>
+                            <span class="sql">FROM</span>
+                            <span class="tabela" style="margin-right: 0;">clientes</span>
+                            <span class="operador">;</span>
+                        </code>
+                    </div>
+                </div>
+            </pre>
+
+            <p>
+                Esta consulta retorna apenas os nomes e números de telefone de todos os clientes na tabela.
+            </p>
+
+            <p>
+                <ul>
+                    <li>Selecionando informações da tabela de clientes onde o nome começa com "J":</li>
+                </ul>
+            </p>
+
+            <pre>
+                <div class="bg-black">
+                    <div class="flex">
+                        <span>SQL</span>  
+                    </div>
+                    <div class="codigo">
+                        <code>
+                            <span class="sql">SELECT</span>
+                            <span class="operador">*</span>
+                            <span class="sql">FROM</span>
+                            <span class="tabela">clientes</span>
+                            <span class="sql">WHERE</span>
+                            <span class="operador">nome</span>
+                            <span class="string" style="margin-right: 0;">'J%'</span>
+                            <span class="operador">;</span>
+                        </code>
+                    </div>
+                </div>
+            </pre>
+
+            <p>
+                <ul>
+                    <li>Adicionando um novo cliente à tabela de clientes:</li>
+                </ul>
+            </p>
+            
+            <pre>
+                <div class="bg-black">
+                    <div class="flex">
+                        <span>SQL</span>  
+                    </div>
+                    <div class="codigo">
+                        <code>
+                            <span class="sql">INSERT</span>
+                            <span class="sql">INTO</span>
+                            <span class="operador">clientes</span>
+                            <span class="operador">(nome,</span>
+                            <span class="operador">telefone,</span>
+                            <span class="operador">endereço)</span>
+                            <span class="sql">VALUES</span>
+                            <span class="operador">nome</span>
+                            <span class="operador" style="margin-right: 0;">( </span>
+                            <span class="string">'João Silva',</span>
+                            <span class="string">'555-1234',</span>
+                            <span class="string" style="margin-right: 0;">'Rua dos Andradas 123'</span>
+                            <span class="operador" style="margin-right: 0;">)</span>
+                            <span class="operador">;</span>
+                        </code>
+                    </div>
+                </div>
+            </pre>
+
+            <p>
+                Esta consulta adiciona um novo registro à tabela de clientes com o nome "João Silva", 
+                o número de telefone "555-1234" e o endereço "Rua dos Andradas, 123".
+            </p>
+
+            <p>
+                <ul>
+                    <li>Atualizando informações da tabela de clientes para um registro específico:</li>
+                </ul>
+            </p>
+
+            <pre>
+                <div class="bg-black">
+                    <div class="flex">
+                        <span>SQL</span>  
+                    </div>
+                    <div class="codigo">
+                        <code>
+                            <span class="sql">UPDATE</span>
+                            <span class="operador">clientes</span>
+                            <span class="sql">SET</span>
+                            <span class="operador" style="margin-right: 0;">telefone=</span>
+                            <span class="string">'555-4321'</span>
+                            <span class="sql">WHERE</span>
+                            <span class="operador" style="margin-right: 0;">nome=</span>
+                            <span class="string" style="margin-right: 0;">'João Silva'</span>
+                            <span class="operador">;</span>
+                        </code>
+                    </div>
+                </div>
+            </pre>
+
+            <p>
+                Esta consulta atualiza o número de telefone do registro da tabela de clientes com o nome "João Silva" para "555-4321".
+            </p>
+
+            <p>
+                <ul>
+                    <li>Excluindo um registro da tabela de clientes:</li>
+                </ul>
+            </p>
+
+            <pre>
+                <div class="bg-black">
+                    <div class="flex">
+                        <span>SQL</span>  
+                    </div>
+                    <div class="codigo">
+                        <code>
+                            <span class="sql">DELETE</span>
+                            <span class="sql">FROM</span>
+                            <span class="operador">clientes</span>
+                            <span class="sql">WHERE</span>
+                            <span class="operador" style="margin-right: 0;">nome=</span>
+                            <span class="string" style="margin-right: 0;">'João Silva'</span>
+                            <span class="operador">;</span>
+                        </code>
+                    </div>
+                </div>
+            </pre>
+
+            <p>Esta consulta exclui o registro da tabela de clientes com o nome "João Silva".</p>
+
+        </article>
+
+        <article>
+            <div class="banner" style="margin-bottom: 20px;">
+                <img src="../../../assets/banners/mysql-banner.png" alt="Banner com logo do MySQL" />
+            </div>
+        </article>
+
+        <article>
+            <p>
+                <strong>Conclusão</strong>
+            </p>
+            <p>
+                O SQL é uma linguagem poderosa que é usada para gerenciar dados em bancos de dados relacionais. 
+                É fácil de aprender e é uma habilidade essencial para qualquer pessoa que trabalhe com dados. 
+                Com o SQL, você pode criar, manipular e consultar bancos de dados para obter as informações de que precisa.
+            </p>
+        </article>
+
+	</main>
+	<footer>
+		<a href="https://www.wellsistemasweb.com" target="_blank">
+		    <p>WellSistemasWeb © 2023</p>
+        </a>
+	</footer>
+</body>
+</html>
